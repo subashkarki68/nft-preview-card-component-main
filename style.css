@@ -46,18 +46,18 @@ body {
     -moz-box-shadow: -1px 47px 32px -5px rgba(0, 0, 0, 0.52);
 }
 
-.card article {
+.card .card-header {
     --animation-overlay: opacity 0.3s ease-in-out;
     position: relative;
 }
 
-.card article>img {
+.card .card-header>img {
     max-width: 100%;
     display: block;
     border-radius: 0.33em;
 }
 
-.card article .overlay {
+.card .card-header .overlay {
     position: absolute;
     top: 0;
     width: 100%;
@@ -67,7 +67,7 @@ body {
     border-radius: 0.33em;
 }
 
-.card article img:last-child {
+.card .card-header img:last-child {
     z-index: 99;
     position: absolute;
     top: 50%;
@@ -77,13 +77,13 @@ body {
     cursor: pointer;
 }
 
-.card article:hover .overlay {
+.card .card-header:hover .overlay {
     opacity: 0.5;
     cursor: pointer;
     transition: var(--animation-overlay);
 }
 
-.card article:hover img:last-child {
+.card .card-header:hover img:last-child {
     opacity: 1;
     transition: var(--animation-overlay);
 }
